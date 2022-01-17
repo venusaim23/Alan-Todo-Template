@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/TodoFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.alan.todo.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/TodoFragment"
+        android:name="com.alan.todo.TodoFragment"
+        android:label="@string/todo_list"
+        tools:layout="@layout/fragment_todo">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -23,6 +23,6 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/TodoFragment" />
     </fragment>
 </navigation>

@@ -8,8 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -20,6 +22,9 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    private FragmentManager fragmentManager;
+    private NavHostFragment navHostFragment;
+    private NavController navController;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -32,7 +37,14 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        fragmentManager = getSupportFragmentManager();
+        navHostFragment = (NavHostFragment) fragmentManager.findFragmentById(R.id.nav_host_fragment_content_main);
+
+        /* this type of initialisation requires the component fragment
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+         */
+        assert navHostFragment != null;
+        navController = navHostFragment.getNavController();
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
@@ -69,7 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        navHostFragment = (NavHostFragment) fragmentManager.findFragmentById(R.id.nav_host_fragment_content_main);
+        assert navHostFragment != null;
+        navController = navHostFragment.getNavController();
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
