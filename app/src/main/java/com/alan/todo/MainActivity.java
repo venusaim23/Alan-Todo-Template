@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
+    private static final String SDK_KEY = "YOUR SDK KEY";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +57,14 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        // Todo: Add Alan configuration and initialise Alan Button
+
+        // Todo: create alanCallback object to use handlers to
+        //  interact with Alan and register with Alan Button
     }
+
+    // Todo: create executeCommand function to check for command and execute tasks
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
