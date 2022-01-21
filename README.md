@@ -1,12 +1,14 @@
-# Alan-Todo-Template
+# Alan Todo Template
 
 Create an android application and add smart voice assistant with Alan AI in just a few steps.
 
 ### Step 1: Fork this repository
 Forking the repository will create a copy of the repository in your gitHub where you can add custom features and build a different version of the app for yourself. You can also, contribute to the template by suggesting necessary changes through issues.
+<img src="./Images/fork.png" title="Fork" align="center" />
 
 ### Step 2: Clone your repository
 After forking the repository head over to your copy and fork clone the repository in your local system. Open the project with Android Studio. Your JDK version might mismatch, so select "Use Embedded JDK" when prompted in android studio.
+<img src="./Images/clone.png" title="Fork" align="center" />
 
 ### Step 3: Sign Up to Alan Studio
 After the build is successful, sign up to Alan Studio and create a project to get the API key. Alan provides APIs for our android application to enable voice assistant. Paste the API key in your project and run the application.
