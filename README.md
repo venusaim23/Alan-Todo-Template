@@ -2,7 +2,7 @@
 
 Create an android application and add smart voice assistant with Alan AI in just a few steps.
 
-### Step 1: Fork this repository
+### Step 1: Fork the repository
 Forking the repository will create a copy of the repository in your gitHub where you can add custom features and build a different version of the app for yourself. You can also, contribute to the template by suggesting necessary changes through issues.
 <img src="./Images/fork.png" title="Fork" align="center" />
 
