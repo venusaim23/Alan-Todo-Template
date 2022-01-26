@@ -7,7 +7,13 @@ Forking the repository will create a copy of the repository in your gitHub where
 <img src="./Images/fork.png" title="Fork" align="center" />
 
 ### Step 2: Clone your repository
-After forking the repository head over to your copy and fork clone the repository in your local system. Open the project with Android Studio. Your JDK version might mismatch, so select "Use Embedded JDK" when prompted in android studio.
+After forking the repository head over to your fork and clone the repository in your local system. There are two ways to clone your repository
+
+- Open Android Studio and click on `Get from VCS`. Type the URL that you copied and select the destination. Your project will be cloned and open in Android Studio.
+</br></br>(OR)</br></br>
+- Open Terminal, navigate to the folder where you want to store the project and type `git clone "URL that you copied"`. A folder will be created named `Alan-Todo`. Open the project with Android Studio.
+
+Your JDK version might mismatch, so select "Use Embedded JDK" when prompted in android studio.
 <img src="./Images/clone.png" title="Fork" align="center" />
 
 ### Step 3: Sign Up to Alan Studio
