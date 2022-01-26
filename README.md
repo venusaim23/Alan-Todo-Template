@@ -7,7 +7,7 @@ Forking the repository will create a copy of the repository in your gitHub where
 <img src="./Images/fork.png" title="Fork" align="center" />
 
 ### Step 2: Clone your repository
-After forking the repository head over to your fork and clone the repository in your local system. There are two ways to clone your repository
+After forking the repository head over to your fork and clone the repository in your local system. There are two ways to clone your repository. Copy the URL of your fork and:
 
 - Open Android Studio and click on `Get from VCS`. Type the URL that you copied and select the destination. Your project will be cloned and open in Android Studio.
 </br></br>(OR)</br></br>
